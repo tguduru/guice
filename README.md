@@ -1,7 +1,7 @@
 guice
 =====
 
-This project contains examples of guice 3.0.
+This project contains examples of guice 4.0.
 
 ### Notes
 
