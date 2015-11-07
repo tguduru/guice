@@ -4,7 +4,7 @@ import com.google.inject.AbstractModule;
 
 import org.tguduru.guice.service.Log;
 import org.tguduru.guice.service.impl.LogService;
-import org.tguduru.guice.service.impl.SysoutLogService;
+import org.tguduru.guice.service.impl.ConsoleLogService;
 
 /**
  * @author Guduru, Thirupathi Reddy
@@ -17,6 +17,6 @@ public class CustomAnnotationModule extends AbstractModule {
     protected void configure() {
         //here using the custom annotation instead of @Named.
         bind(Log.class).annotatedWith(LogServiceInject.class).to(LogService.class);
-        bind(Log.class).annotatedWith(SysoutServiceInject.class).to(SysoutLogService.class);
+        bind(Log.class).annotatedWith(ConsoleServiceInject.class).to(ConsoleLogService.class);
     }
 }

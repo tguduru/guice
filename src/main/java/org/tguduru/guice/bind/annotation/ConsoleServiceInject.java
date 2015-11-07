@@ -15,5 +15,5 @@ import java.lang.annotation.Target;
 @Retention(value = RetentionPolicy.RUNTIME)
 // We can use this annotation instead of @Named for multiple implementation injections. Create multiple annotation like
 // this for each @Named types.
-public @interface SysoutServiceInject {
+public @interface ConsoleServiceInject {
 }

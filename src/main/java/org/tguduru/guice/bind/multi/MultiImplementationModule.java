@@ -4,7 +4,7 @@ import com.google.inject.AbstractModule;
 import com.google.inject.name.Names;
 import org.tguduru.guice.service.Log;
 import org.tguduru.guice.service.impl.LogService;
-import org.tguduru.guice.service.impl.SysoutLogService;
+import org.tguduru.guice.service.impl.ConsoleLogService;
 
 /**
  * Demonstrates the multi implementation of the given interface injection using {@link com.google.inject.name.Named}.
@@ -17,6 +17,6 @@ public class MultiImplementationModule extends AbstractModule {
     @Override
     protected void configure() {
         bind(Log.class).annotatedWith(Names.named("logging")).to(LogService.class);
-        bind(Log.class).annotatedWith(Names.named("sysout")).to(SysoutLogService.class);
+        bind(Log.class).annotatedWith(Names.named("console")).to(ConsoleLogService.class);
     }
 }

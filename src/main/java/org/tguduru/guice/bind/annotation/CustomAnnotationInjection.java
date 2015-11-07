@@ -14,7 +14,7 @@ public class CustomAnnotationInjection {
     @Inject
     private Log log;
 
-    @SysoutServiceInject
+    @ConsoleServiceInject
     @Inject
     private Log sysoutLog;
 

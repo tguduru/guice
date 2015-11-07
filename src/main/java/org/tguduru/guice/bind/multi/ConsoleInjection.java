@@ -5,14 +5,14 @@ import com.google.inject.name.Named;
 import org.tguduru.guice.service.Log;
 
 /**
- * Constructor injection with {@link SysoutInjection}
+ * Constructor injection with {@link ConsoleInjection}
  * @author Guduru, Thirupathi Reddy
  */
-public class SysoutInjection {
+public class ConsoleInjection {
     private Log log;
 
     @Inject
-    public SysoutInjection(@Named("sysout") final Log log) {
+    public ConsoleInjection(@Named("console") final Log log) {
         this.log = log;
     }
 
