@@ -4,6 +4,9 @@
     <groupId>org.java.framework</groupId>
     <artifactId>guice</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <properties>
+        <sonar.language>java</sonar.language>
+    </properties>
     <dependencies>
         <!-- compile dependencies-->
         <dependency>
