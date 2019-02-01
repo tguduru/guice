@@ -21,4 +21,5 @@ This project contains examples of guice 4.0.
 * Books
 	* [Learning Google Guice](https://www.packtpub.com/application-development/learning-google-guice)
 	* [Google Guice](http://www.apress.com/google/google-guice/9781590599976)
+	* [Dependency Injection](https://www.manning.com/books/dependency-injection)
 
